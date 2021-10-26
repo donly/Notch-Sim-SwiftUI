@@ -23,7 +23,7 @@ jobs:
         with:
           xcode-version: latest
       - name: Setup
-        run: ./setup.sh
+        run: ./.github/workflows/setup.sh
       - name: Build
         run: xcodebuild clean -scheme 'Notch Sim' build -configuration Release -derivedDataPath build
       - name: Zip the build
